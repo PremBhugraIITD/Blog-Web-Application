@@ -1,0 +1,43 @@
+<%-include('partials/header.ejs')%>
+
+
+<div class="home">
+<form action="/add" method="GET">
+    <button type="submit">Add Blog</button>
+  </form>
+<h2>Current Blogs:</h1>
+<ul>
+    <% blogs.forEach((blog)=>{ %>
+        <li>
+            <h3><%= blog.title %></h3>
+            <div class="paragraphs">
+            <p><%=blog.author%></p>
+            <p><%=blog.date%></p>
+            </div>
+            <div class="btn">
+            <form action="/view/<%= blog.id %>" method="POST">
+                <button type="submit" class = "one">View</button>
+            </form>
+            <form action="/edit/<%= blog.id %>" method="POST">
+                <button type="submit" class = "two">Edit</button>
+            </form>
+            <button onclick="deleteBlog(<%= blog.id %>)" class="three">Delete</button>
+            </div>
+        </li>
+    <%}); %>
+</ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    const deleteBlog = (id)=>{
+        axios.delete(`/delete/${id}`)
+        .then(()=>{
+            location.reload();
+        })
+        .catch((err)=>{
+            console.log(err);
+        });
+    }
+</script>
+
+<%-include('partials/footer.ejs')%>

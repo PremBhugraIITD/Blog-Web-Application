@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: #c7ddde;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  z-index: 1000;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 5%;
+  top: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 2vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  z-index: 1000;
+}
+
+.home,
+.view,
+.update {
+  margin: 0;
+  padding: 0;
+  margin-top: 13vh;
+  margin-left: 2%;
+  padding-bottom: 3%;
+}
+
+.home > form {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 10%;
+  height: 10%;
+  margin-left: 85%;
+}
+
+.home > form button {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 3px rgb(152, 161, 137);
+  background-color: rgb(0, 0, 0, 0.9);
+  color: white;
+  font-size: 4vh;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.home > form button:active {
+  opacity: 0.7;
+}
+
+.home > h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 6vh;
+  color: rgb(25, 104, 13);
+}
+
+.home ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 2%;
+  margin-top: 2%;
+  width: 45%;
+}
+
+.home ul li {
+  margin: 0;
+  padding: 0;
+  /* height: 35vh; */
+  min-height: 35vh;
+  width: 99.25%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  border-radius: 30px;
+  border: solid 3px black;
+  align-items: center;
+  position: relative;
+}
+
+.home ul li h3 {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  font-size: 6vh;
+}
+
+.home ul li .paragraphs {
+  background-color: rgba(255, 255, 255, 0.799);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 3vh;
+  flex-grow: 1;
+}
+
+.home ul li .paragraphs p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home ul li .btn {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 30%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.home ul li .btn > button,
+.home ul li .btn > form {
+  margin: 0;
+  padding: 0;
+  height: 7vh;
+  width: 25%;
+}
+
+.home ul li .btn button {
+  border-radius: 20px;
+  border: solid 3px grey;
+}
+
+.home ul li .btn form button {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 3px grey;
+}
+
+.home ul li button {
+  font-size: 3.5vh;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.home ul li button.one {
+  background-color: rgba(22, 180, 40, 0.668);
+}
+.home ul li button.two {
+  background-color: blue;
+}
+.home ul li button.three {
+  background-color: red;
+}
+
+.home ul li button:active {
+  opacity: 0.7;
+}
+
+.view {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 95%;
+}
+
+.view h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 8vh;
+  color: rgb(104, 63, 13);
+  margin-bottom: 1%;
+}
+
+.view p {
+  margin: 0;
+  padding: 0;
+  font-size: 3vh;
+  margin-top: 1%;
+}
+
+.view form {
+  margin: 0;
+  padding: 0;
+  margin-top: 2%;
+  width: 8%;
+  height: 7vh;
+  text-align: justify;
+}
+
+.view form button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 3px black;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  font-size: 3.5vh;
+}
+
+.view form button:active {
+  opacity: 0.7;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  width: 95%;
+}
+
+.update form label {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  color: brown;
+  font-size: 4vh;
+}
+
+.update form textarea {
+  border-radius: 20px;
+  border: 3px solid black;
+  margin-top: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 98%;
+  font-size: 2.5vh;
+  resize: none;
+  overflow: auto;
+}
+
+.update form textarea::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers */
+}
+
+.update form textarea {
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.update form input {
+  border-radius: 10px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  height: 8%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 3.5vh;
+  padding-left: 1%;
+}
+
+.update form input#title {
+  width: 45%;
+}
+
+.update form input#author {
+  width: 30%;
+}
+
+.update form[method="POST"] button {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 8%;
+  width: 9%;
+  bottom: 10%;
+  left: 2%;
+  border-radius: 20px;
+  border: solid 3px black;
+  background-color: rgb(13, 127, 118);
+}
+
+.update form[method="GET"] {
+  margin: 0;
+  padding: 0;
+  width: 8%;
+  height: 8%;
+  position: fixed;
+  bottom: 10%;
+  left: 13%;
+}
+
+.update form[method="GET"] button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 3px black;
+  background-color: brown;
+}
+
+.update button {
+  color: white;
+  font-size: 3.5vh;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.update button:active {
+  opacity: 0.7;
+}

@@ -1,0 +1,11 @@
+<%-include('partials/header.ejs')%>
+<div class="view">
+  <h2><%=blog.title%></h2>
+  <p><%=blog.content%></p>
+  <p><%=blog.author%></p>
+  <p><%=blog.date%></p>
+  <form action="/" method="GET">
+    <button type="submit">Back</button>
+  </form>
+</div>
+<%-include('partials/footer.ejs')%>

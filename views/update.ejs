@@ -1,0 +1,37 @@
+<%-include('partials/header.ejs')%>
+<div class="update">
+  <form
+    action="<%= pageTitle === 'Create' ? '/add' : `/update/${blog.id}` %>"
+    method="POST"
+  >
+    <label for="title">Title:</label><br/>
+    <input
+      type="text"
+      id="title"
+      name="title"
+      required
+      placeholder="Enter the blog title"
+      value="<%=locals.blog && blog.title%>"
+    />
+    <label for="content">Content:</label><br/>
+    <textarea
+      id="content"
+      name="content"
+      rows="10"
+      cols="80"
+      required
+      placeholder="Enter the blog content"
+    >
+<%=locals.blog && blog.content%></textarea
+    ><br/>
+
+    <label for="author">Author:</label><br/>
+    <input type="text" id="author" name="author" required placeholder="Enter the author's name" value="<%=locals.blog && blog.author%>"" /><br /><br />
+
+    <button class="unique" type="submit">Submit</button>
+  </form>
+  <form class="unique" action="/" method="GET">
+    <button type="submit">Back</button>
+  </form>
+</div>
+<%-include('partials/footer.ejs')%>
