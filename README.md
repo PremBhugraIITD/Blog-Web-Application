@@ -28,7 +28,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository** (or download the project)
    ```bash
-   git clone [<repository-url>]https://github.com/PremBhugraIITD/Blog-Web-Application.git)
+   git clone https://github.com/PremBhugraIITD/Blog-Web-Application.git)
    cd "Blob Web Application"
    ```
 
